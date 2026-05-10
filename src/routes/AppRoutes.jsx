@@ -10,6 +10,7 @@ import QuizDashboard from "../pages/QuizDashboard";
 import QuizPlayer from "../pages/QuizPlayer";
 import Policies from "../pages/Policies";
 import NotFound from "../pages/NotFound";
+import PolicyDetails from "../pages/PolicyDetails";
 
 const AppRoutes = () => {
   return (
@@ -22,6 +23,7 @@ const AppRoutes = () => {
         <Route path="/quiz" element={<QuizDashboard />} />
         <Route path="/quiz/:id" element={<QuizPlayer />} />
         <Route path="/policies" element={<Policies />} />
+      <Route path="/policy/:id" element={<PolicyDetails />} />
 
         {/* fallback */}
         <Route path="*" element={<NotFound />} />

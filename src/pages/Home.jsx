@@ -1,14 +1,23 @@
-import React from "react";
-
-const Courses = () => {
+import Hero from "../components/home/Hero";
+import CourseRow from "../components/home/CourseRow";
+import WhyChoose from "../components/home/WhyChoose";
+import Testimonials from "../components/home/Testimonials";
+import CTA from "../components/home/CTA"; 
+const Home = () => {
   return (
-    <div className="container mx-auto px-4 py-8">   
-        <h1 className="text-3xl font-bold mb-6">All Courses</h1>
-        <p className="text-gray-600 theme-dark:text-gray-300">
-            Explore our comprehensive courses on budgeting, investing, credit management, and more. 
-        </p>
+    <div className="max-w-7xl mx-auto px-4 md:px-6 py-6 space-y-10">
+
+      <Hero />
+
+      <CourseRow title="Continue Learning" continueWatching />
+      <CourseRow title="Popular Courses" />
+      <CourseRow title="Recommended For You" />
+
+      <WhyChoose />
+      <Testimonials />
+      <CTA />
     </div>
   );
 };
 
-export default Courses;
+export default Home;
